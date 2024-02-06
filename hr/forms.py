@@ -2,6 +2,7 @@ from django import forms
 from .models import Person, City
 
 class PersonForm(forms.ModelForm):
+    """Add a comment."""
     class Meta:
         model = Person
         fields = ('name', 'birthdate', 'country', 'city')
